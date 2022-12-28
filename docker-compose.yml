@@ -12,6 +12,7 @@ services:
   vendors-db:
     image: jhawk7/vendors-db
     restart: on-failure
+    build: ./db
     env_file:
       - ./.env.test
     ports:
